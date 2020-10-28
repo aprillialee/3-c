@@ -16,12 +16,13 @@ function NavBar() {
 }
 
 const NavBarStyled = styled.div`
-width: 100%;
+width: 100vw;
 height: 60px;
 background: #FFFFFF;
 box-shadow: 0.5px 0.5px 2.5px;
 display: flex;
 flex-direction: row;
+margin: auto;
 
 `
 

@@ -38,7 +38,6 @@ font-weight: 400;
     width: 300px;
     transition: transform 0.3s ease-in-out;
     padding-top: 2.5rem;
-  
 
     li {
       border: none;
