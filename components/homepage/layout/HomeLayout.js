@@ -1,9 +1,13 @@
 import styled from "styled-components"
 
+import HeadlineCard from "../home-cards/HeadlineCard"
+
 function HomeLayout() {
   return(
   <HomeLayoutStyled>
-    <Item1>Hello</Item1>
+    <Item1>
+      <HeadlineCard/>
+    </Item1>
     <Item2>Hello</Item2>
     <Item3>Hello</Item3>
     <Item4>Hello</Item4>
@@ -17,8 +21,8 @@ function HomeLayout() {
 const HomeLayoutStyled = styled.div`
 width: 75%;
 height: 100vh;
-background: red;
 margin: auto;
+margin-top: 25px;
 display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -27,51 +31,65 @@ display: grid;
 
 @media (max-width: 768px) {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 `
 const Item1 = styled.div`
 width: 100%;
 height: 100%;
-background: green;
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
 grid-area: 1 / 1 / 4 / 5;
 `
 
 const Item2 = styled.div`
 width: 100%;
 height: 100%;
-background: pink;
-grid-area: 1 / 5 / 2 / 7; 
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
+grid-area: 1 / 5 / 2 / 7;
 `
 const Item3 = styled.div`
 width: 100%;
 height: 100%;
-background: orange;
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
 grid-area: 2 / 5 / 3 / 7;
 `
 
 const Item4 = styled.div`
 width: 100%;
 height: 100%;
-background: blue;
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
 grid-area: 3 / 5 / 4 / 7;
 `
 const Item5 = styled.div`
 width: 100%;
 height: 100%;
-background: purple;
-grid-area: 4 / 1 / 6 / 3; 
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
+grid-area: 4 / 1 / 6 / 3;
 `
 const Item6 = styled.div`
 width: 100%;
 height: 100%;
-background: yellow;
-grid-area: 4 / 3 / 6 / 5; 
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
+grid-area: 4 / 3 / 6 / 5;
 `
 const Item7 = styled.div`
 width: 100%;
 height: 100%;
-background: gold;
+border: 0.1px solid #EAEAEA;
+background: #FAFAFA;
+border-radius: 10px;
 grid-area: 4 / 5 / 6 / 7;
 `
 
