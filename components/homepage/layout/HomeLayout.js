@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import HeadlineCard from "../home-cards/HeadlineCard"
+import SideCard from "../home-cards/SideCard"
 
 function HomeLayout() {
   return(
@@ -8,9 +9,15 @@ function HomeLayout() {
     <Item1>
       <HeadlineCard/>
     </Item1>
-    <Item2>Hello</Item2>
-    <Item3>Hello</Item3>
-    <Item4>Hello</Item4>
+    <Item2>
+      <SideCard/>
+    </Item2>
+    <Item3>
+      <SideCard/>
+    </Item3>
+    <Item4>
+      <SideCard/>
+    </Item4>
     <Item5>Hello</Item5>
     <Item6>Hello</Item6>
     <Item7>Hello</Item7>
@@ -20,14 +27,14 @@ function HomeLayout() {
 
 const HomeLayoutStyled = styled.div`
 width: 80%;
-height: 750px;
+height: 100vh;
 margin: auto;
 margin-top: 25px;
 display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
 
 @media (max-width: 768px) {
   display: flex;
@@ -43,7 +50,7 @@ background: #FAFAFA;
 border-radius: 10px;
 grid-area: 1 / 1 / 4 / 5;
 @media (max-width: 768px) {
-  height: 250px;
+  
 }
 `
 
