@@ -19,8 +19,8 @@ function HomeLayout() {
 }
 
 const HomeLayoutStyled = styled.div`
-width: 75%;
-height: 100vh;
+width: 80%;
+height: 750px;
 margin: auto;
 margin-top: 25px;
 display: grid;
@@ -38,34 +38,32 @@ const Item1 = styled.div`
 width: 100%;
 height: 100%;
 border: 0.1px solid #EAEAEA;
+box-shadow: 0.1px 0.1px 1px;
 background: #FAFAFA;
 border-radius: 10px;
 grid-area: 1 / 1 / 4 / 5;
+@media (max-width: 768px) {
+  height: 250px;
+}
 `
 
 const Item2 = styled.div`
 width: 100%;
 height: 100%;
-border: 0.1px solid #EAEAEA;
-background: #FAFAFA;
-border-radius: 10px;
+border-bottom: 0.1px solid #EAEAEA;
 grid-area: 1 / 5 / 2 / 7;
 `
 const Item3 = styled.div`
 width: 100%;
 height: 100%;
-border: 0.1px solid #EAEAEA;
-background: #FAFAFA;
-border-radius: 10px;
+border-bottom: 0.1px solid #EAEAEA;
 grid-area: 2 / 5 / 3 / 7;
 `
 
 const Item4 = styled.div`
 width: 100%;
 height: 100%;
-border: 0.1px solid #EAEAEA;
-background: #FAFAFA;
-border-radius: 10px;
+border-bottom: 0.1px solid #EAEAEA;
 grid-area: 3 / 5 / 4 / 7;
 `
 const Item5 = styled.div`

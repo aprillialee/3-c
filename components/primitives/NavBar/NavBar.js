@@ -7,11 +7,9 @@ function NavBar() {
   return(
     <NavBarStyled>
       <Logo img src="./3c.png"/>
-      <Gap/>
       <Search placeholder="SEARCH..."/>
       <Burger/>
     </NavBarStyled>
-
   )
 }
 
@@ -23,16 +21,8 @@ box-shadow: 0.5px 0.5px 2.5px;
 display: flex;
 flex-direction: row;
 margin: auto;
-
 `
 
-const Gap = styled.div`
-width: 50px;
-height: 100%;
-@media (max-width: 768px){
-  display: none;
-}
-`
 const Logo = styled.img`
 height: 40px;
 width: 40px;
@@ -50,7 +40,7 @@ margin-left: 35px;
 width: 40%;
 height: 60%;
 margin-top: 12px;
-border: 1px solid #686c82;
+border: 1px solid #EAEAEA;
 border-radius: 6px;
 padding: 10px;
 @media (max-width: 768px) {
