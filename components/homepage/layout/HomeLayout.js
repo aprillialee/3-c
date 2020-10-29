@@ -33,9 +33,9 @@ function HomeLayout() {
 }
 
 const HomeLayoutStyled = styled.div`
-width: 80%;
-height: 750px;
-margin: auto;
+width: 85%;
+height: auto !important;
+margin: 0 auto -100px;
 margin-top: 25px;
 display: grid;
   grid-template-columns: repeat(6, 1fr);
