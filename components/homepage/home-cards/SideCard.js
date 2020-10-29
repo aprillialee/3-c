@@ -57,7 +57,7 @@ align-self: end;
 
 const Date = styled.div`
 grid-area: 1 / 4 / 2 / 5;
-color: #5764AF;
+color: #4F5576;
 font-size: 10px;
 font-weight: 600;
 align-self: end;
@@ -73,7 +73,6 @@ font-weight: 500;
 const Subtitle = styled.div`
 grid-area: 3 / 3 / 4 / 5;
 font-size: 10px;
-padding-bottom: 10px;
 `
 
 export default SideCard;

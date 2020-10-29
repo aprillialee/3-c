@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 import HeadlineCard from "../home-cards/HeadlineCard"
 import SideCard from "../home-cards/SideCard"
+import MediumCard from "../home-cards/MediumCard"
 
 function HomeLayout() {
   return(
@@ -18,16 +19,22 @@ function HomeLayout() {
     <Item4>
       <SideCard/>
     </Item4>
-    <Item5>Hello</Item5>
-    <Item6>Hello</Item6>
-    <Item7>Hello</Item7>
+    <Item5>
+      <MediumCard/>
+      </Item5>
+    <Item6>
+      <MediumCard/>
+    </Item6>
+    <Item7>
+      <MediumCard/>
+    </Item7>
   </HomeLayoutStyled>
   )
 }
 
 const HomeLayoutStyled = styled.div`
 width: 80%;
-height: 100vh;
+height: 750px;
 margin: auto;
 margin-top: 25px;
 display: grid;
@@ -50,7 +57,7 @@ background: #FAFAFA;
 border-radius: 10px;
 grid-area: 1 / 1 / 4 / 5;
 @media (max-width: 768px) {
-  
+
 }
 `
 
@@ -76,25 +83,16 @@ grid-area: 3 / 5 / 4 / 7;
 const Item5 = styled.div`
 width: 100%;
 height: 100%;
-border: 0.1px solid #EAEAEA;
-background: #FAFAFA;
-border-radius: 10px;
 grid-area: 4 / 1 / 6 / 3;
 `
 const Item6 = styled.div`
 width: 100%;
 height: 100%;
-border: 0.1px solid #EAEAEA;
-background: #FAFAFA;
-border-radius: 10px;
 grid-area: 4 / 3 / 6 / 5;
 `
 const Item7 = styled.div`
 width: 100%;
 height: 100%;
-border: 0.1px solid #EAEAEA;
-background: #FAFAFA;
-border-radius: 10px;
 grid-area: 4 / 5 / 6 / 7;
 `
 
