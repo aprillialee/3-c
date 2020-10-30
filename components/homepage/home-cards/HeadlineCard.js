@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-function HeadlineCard() {
+function HeadlineCard({ headline }) {
+  const { API_URL } = process.env
+
   return(
     <HeadLineCardStyled>
-      <ImageContainer><img src="./3d.jpg"/></ImageContainer>
-      <Category>LATEST 3D NEWS</Category>
-      <Date>23 NOV 2020</Date>
-      <Title>Why We No Longer Need 3D Glasses</Title>
-      <Subtitle>The 3D virtual world is knocking at everyone's doors. Here's how 3D developers are ensuring that the magic of the 3D world is accessible to everyone with a smart device.</Subtitle>
+      <ImageContainer><img src={API_URL + headline.image.url}/></ImageContainer>
+      <Category>{headline.category}</Category>
+      <Date>{headline.date}</Date>
+      <Title>{headline.title}</Title>
+      <Description>{headline.description}</Description>
     </HeadLineCardStyled>
   )
 }
@@ -64,16 +66,18 @@ font-size: 28px;
 font-weight: 500;
 padding-left: 18px;
 padding-right: 18px;
+line-height: 32px;
 
 @media (max-width: 768px){
   font-size: 15px;
 }
 `
 
-const Subtitle = styled.div`
+const Description = styled.div`
  grid-area: 5 / 1 / 6 / 3;
 padding-left: 18px;
 padding-right: 18px;
+padding-bottom: 10px;
 font-size: 14px;
 
 @media (max-width: 768px){

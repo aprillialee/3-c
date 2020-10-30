@@ -1,23 +1,25 @@
 import styled from "styled-components"
 
+import fetch from "isomorphic-unfetch"
+
 import HeadlineCard from "../home-cards/HeadlineCard"
 import SideCard from "../home-cards/SideCard"
 import MediumCard from "../home-cards/MediumCard"
 
-function HomeLayout() {
+function HomeLayout({ headlines, features }) {
   return(
   <HomeLayoutStyled>
     <Item1>
-      <HeadlineCard/>
+    {headlines.map(headline => (<HeadlineCard key={headline.id} headline={headline}/>))}
     </Item1>
     <Item2>
-      <SideCard/>
+    {features.map(feature => (<SideCard key={feature.id} feature={feature}/>))}
     </Item2>
     <Item3>
-      <SideCard/>
+    {features.map(feature => (<SideCard key={feature.id} feature={feature}/>))}
     </Item3>
     <Item4>
-      <SideCard/>
+    {features.map(feature => (<SideCard key={feature.id} feature={feature}/>))}
     </Item4>
     <Item5>
       <MediumCard/>
@@ -43,7 +45,7 @@ function HomeLayout() {
 
 const HomeLayoutStyled = styled.div`
 width: 80%;
-height: auto;
+height: 100vh;
 margin: 0 auto -100px;
 margin-top: 25px;
 display: grid;

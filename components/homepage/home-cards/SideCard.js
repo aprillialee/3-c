@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
-function SideCard() {
+function SideCard({ feature }) {
+  const { API_URL } = process.env
   return(
     <SideCardStyled>
       <ImageContainer>
-        <img src="./3dside.jpg"/>
+        <img src={API_URL + feature.image.url}/>
       </ImageContainer>
       <Category>
-        AR NEWS
+        {feature.category}
       </Category>
       <Date>
-        23 NOV 2020
+        {feature.date}
       </Date>
       <Title>
-        AR And The Brain: An Undiscovered Story
+        {feature.title}
       </Title>
       <Subtitle>
-        What happens when we introduce a new reality to our psyche.
+        {feature.description}
       </Subtitle>
     </SideCardStyled>
   )

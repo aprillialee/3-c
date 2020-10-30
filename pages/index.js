@@ -1,16 +1,36 @@
 import Head from 'next/head'
 
-import HomeLayout from "../components/homepage/layout/HomeLayout"
-import Footer from "../components/primitives/Footer/Footer"
+import fetch from "isomorphic-unfetch"
 
-export default function Home() {
+import HomeLayout from "../components/homepage/layout/HomeLayout"
+
+export default function Home({headlines, features}) {
+  console.log(features)
   return (
     <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomeLayout/>
+      <HomeLayout headlines={headlines} features={features}/>
     </>
   )
+}
+
+
+export async function getServerSideProps() {
+  const { API_URL } = process.env
+
+  const res = await fetch(`${API_URL}/headlines`)
+  const res1 = await fetch(`${API_URL}/features`)
+
+  const data = await res.json()
+  const data1 = await res1.json()
+
+  return {
+    props: {
+      headlines: data,
+      features: data1
+    }
+  }
 }
