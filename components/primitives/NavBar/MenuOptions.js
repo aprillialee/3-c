@@ -23,7 +23,7 @@ padding-right: 25px;
 font-size: 14px;
 height: 20px;
 align-self: center;
-font-weight: 400;
+font-weight: 600;
 }
 
 

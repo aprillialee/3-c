@@ -33,7 +33,7 @@ img{
 const Category = styled.div`
 grid-area: 3 / 1 / 4 / 2;
 color: #5764AF;
-padding-left: 12px;
+padding-left: 18px;
 padding-top: 15px;
 align-self: end;
 font-size: 12px;
@@ -50,7 +50,7 @@ color: #4F5576;
 font-size: 12px;
 justify-self: flex-end;
 padding-top: 15px;
-padding-right: 12px;
+padding-right: 18px;
 font-weight: 500;
 
 @media (max-width: 768px){
@@ -62,8 +62,8 @@ const Title = styled.div`
 grid-area: 4 / 1 / 5 / 3;
 font-size: 28px;
 font-weight: 500;
-padding-left: 12px;
-padding-right: 12px;
+padding-left: 18px;
+padding-right: 18px;
 
 @media (max-width: 768px){
   font-size: 15px;
@@ -72,8 +72,8 @@ padding-right: 12px;
 
 const Subtitle = styled.div`
  grid-area: 5 / 1 / 6 / 3;
-padding-left: 12px;
-padding-right: 12px;
+padding-left: 18px;
+padding-right: 18px;
 font-size: 14px;
 
 @media (max-width: 768px){

@@ -28,18 +28,27 @@ function HomeLayout() {
     <Item7>
       <MediumCard/>
     </Item7>
+    <Item8>
+      <MediumCard/>
+      </Item8>
+    <Item9>
+      <MediumCard/>
+    </Item9>
+    <Item10>
+      <MediumCard/>
+    </Item10>
   </HomeLayoutStyled>
   )
 }
 
 const HomeLayoutStyled = styled.div`
-width: 85%;
-height: auto !important;
+width: 80%;
+height: auto;
 margin: 0 auto -100px;
 margin-top: 25px;
 display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 
@@ -73,7 +82,6 @@ height: 100%;
 border-bottom: 0.1px solid #EAEAEA;
 grid-area: 2 / 5 / 3 / 7;
 `
-
 const Item4 = styled.div`
 width: 100%;
 height: 100%;
@@ -94,6 +102,22 @@ const Item7 = styled.div`
 width: 100%;
 height: 100%;
 grid-area: 4 / 5 / 6 / 7;
+`
+
+const Item8 = styled.div`
+width: 100%;
+height: 100%;
+grid-area: 6 / 1 / 8 / 3;
+`
+const Item9 = styled.div`
+width: 100%;
+height: 100%;
+grid-area: 6 / 3 / 8 / 5;
+`
+const Item10 = styled.div`
+width: 100%;
+height: 100%;
+grid-area: 6 / 5 / 8 / 7;
 `
 
 export default HomeLayout;

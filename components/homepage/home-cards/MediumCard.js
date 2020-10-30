@@ -17,6 +17,7 @@ height: 100%;
 display: grid;
 grid-template-columns: repeat(2, 1fr) repeat(3, 0);
 grid-template-rows: 0.1fr 1fr repeat(2, 0);
+padding-bottom: 25px;
 `
 
 const Category = styled.div`
